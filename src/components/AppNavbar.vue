@@ -24,12 +24,12 @@ const menuRoutes = ref([
   {
     label: 'Tree',
     items: [
-      {
-        label: 'Vuetify',
-        command: () => {
-          router.push('/vuetify')
-        }
-      },
+      // {
+      //   label: 'Vuetify',
+      //   command: () => {
+      //     router.push('/vuetify')
+      //   }
+      // },
       {
         label: 'Primevue',
         command: () => {

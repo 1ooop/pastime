@@ -9,11 +9,11 @@ const router = createRouter({
       name: 'home',
       component: HomeView
     },
-    {
-      path: '/vuetify',
-      name: 'vuetify_tree',
-      component: () => import('@/views/VuetifyTreeView.vue')
-    },
+    // {
+    //   path: '/vuetify',
+    //   name: 'vuetify_tree',
+    //   component: () => import('@/views/VuetifyTreeView.vue')
+    // },
     {
       path: '/primevue',
       name: 'primevue_tree',
