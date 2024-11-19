@@ -26,13 +26,21 @@ export const useTree = defineStore('tree', () => {
     allNodes.value = []
     commonParents.value = {}
 
-    await fetch(`${url.value + (empty ? 1 : 0)}`)
-      .then((r) => r.json())
-      .then((r) => {
+    // await fetch(`${url.value + (empty ? 1 : 0)}`)
+    //   .then((r) => r.json())
+    //   .then((r) => {
+    //     tree.value[0].children = empty ? emptyUrlData.value : urlData.value
+    //     parsedTree()
+    //   })
+    //   .catch((err) => alert(err))
+
+    await fetch(`${url.value + (empty ? 1 : 0)}`).then(
+      (r) => {},
+      (r) => {
         tree.value[0].children = empty ? emptyUrlData.value : urlData.value
         parsedTree()
-      })
-      .catch((err) => alert(err))
+      }
+    )
 
     loading.value = false
   }
